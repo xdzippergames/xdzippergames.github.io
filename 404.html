@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>404 - Page Not Found</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #0D1B2A;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            color: white;
+        }
+
+        /* Use the starry background from the provided link */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://vortexfun.github.io/vstatic/stars.svg');
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 1;
+        }
+
+        /* Star image with up and down animation */
+        .star-image {
+            width: 200px;
+            height: 200px;
+            animation: moveUpDown 3s ease-in-out infinite;
+        }
+
+        /* Text Image */
+        .text-image {
+            width: 400px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            background-image: url('https://vortexfun.github.io/homebutton.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 60px;
+            text-indent: -9999px; /* Hide the text */
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        a:hover {
+            transform: scale(1.05);
+        }
+
+        /* Keyframes to move star up and down */
+        @keyframes moveUpDown {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Confused Star Image -->
+        <img src="https://vortexfun.github.io/vstatic/starry.svg" alt="Confused Starry" class="star-image">
+        
+        <!-- 404 Text -->
+        <img src="https://vortexfun.github.io/vstatic/text.png" alt="404 Text" class="text-image">
+        
+        <!-- Home Button -->
+        <a href="/">index</a>
+    </div>
+
+    <script>
+        // Optional JS for any additional interaction
+        const starImage = document.querySelector('.star-image');
+        
+        // Adding a hover effect to scale the star when hovering over it
+        starImage.addEventListener('mouseover', () => {
+            starImage.style.transform = 'scale(1.1)';
+        });
+
+        starImage.addEventListener('mouseout', () => {
+            starImage.style.transform = 'scale(1)';
+        });
+    </script>
+</body>
+</html>
