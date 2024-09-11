@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vortex Games Banner</title>
+  <title>Starlight Unblocker</title>
+
+  <style>
+    * {
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #00338d; /* Dark blue background */
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* Align the banner to the top */
+      height: 100vh;
+      background-color: #00338d;
+    }
+
+    .banner {
+      width: 100%; /* Reduce width to 100% of viewport */
+      background-color: #333333;
+      padding: 10px 0; /* Reduce padding for a smaller banner */
+      position: relative;
+      text-align: center;
+      border-bottom: 5px solid #00338d;
+      padding: 58px 20px;
+      background-color: #333333; /* Gray layer for the banner */
+      margin-bottom: 5px;
+    }
+
+    .banner img {
+      max-width: 70%; /* Reduce max-width for a slightly smaller image */
+      height: auto;
+      width: 80%;
+      max-width: 600px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .banner-line {
+      width: 100%;
+      height: 5px;
+      background-color: #001e53; /* Darker blue line under the banner */
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+    }
+
+    .button-container {
+      text-align: center;
+      width: calc(100% - 40px);
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-top: -10px;
+      padding: 10px 0;
+    }
+
+    .button {
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 150px;
+      height: 150px;
+      display: inline-block;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    .button::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .button:active::after {
+      opacity: 1;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="banner">
+    <img src="https://agotarofficialsite.my.canva.site/vortexusercontent/images/597265d9a991920911133ae397dd2a80.png" alt="Vortex Games Logo">
+    <img src="https://agotarofficialsite.my.canva.site/vortexusercontent/images/597265d9a991920911133ae397dd2a80.png" alt="Vortex Games">
+    <div class="banner-line"></div>
+  </div>
+
+  <div class="button-container" id="buttonContainer">
+    <button id="slope" class="button" style="background-image: url('https://i.ibb.co/wMrRc17/slope-image.png');"></button>
+  </div>
+
+  <script>
+    function openLink(url) {
+      window.location.href = url;
+    }
+
+    document.getElementById('twosidedcannon').addEventListener('click', function () {
+      openLink("twosidedcannon");
+    });
+  </script>
+
+</body>
+
+</html>
