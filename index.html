@@ -1,44 +1,27 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vortex Games Banner</title>
+  <title>Vortex Games</title>
+
   <style>
-    * {
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background-color: #00338d; /* Dark blue background */
-      display: flex;
-      justify-content: center;
-      align-items: flex-start; /* Align the banner to the top */
-      height: 100vh;
-      background-color: #00338d;
+      background-color: #00338d; /* Page background color */
     }
 
     .banner {
-      width: 100%; /* Reduce width to 100% of viewport */
-      background-color: #333333;
-      padding: 10px 0; /* Reduce padding for a smaller banner */
       position: relative;
       text-align: center;
-      border-bottom: 5px solid #00338d;
       padding: 58px 20px;
       background-color: #333333; /* Gray layer for the banner */
       margin-bottom: 5px;
     }
 
     .banner img {
-      max-width: 70%; /* Reduce max-width for a slightly smaller image */
-      height: auto;
       width: 80%;
       max-width: 600px;
       position: relative;
@@ -69,9 +52,10 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      width: 150px;
-      height: 150px;
+      width: 145px;  /* Adjusted width */
+      height: 85px;  /* Adjusted height */
       display: inline-block;
+      background-color: #00338d;  /* Match page background color */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -99,15 +83,15 @@
 
 <body>
 
-  
   <div class="banner">
     <img src="https://agotarofficialsite.my.canva.site/vortexusercontent/images/597265d9a991920911133ae397dd2a80.png" alt="Vortex Games">
     <div class="banner-line"></div>
   </div>
 
   <div class="button-container" id="buttonContainer">
-    <button id="twosidedcannon" class="button" style="background-image: url('https://i.ibb.co/SXyfyYQ/Twosidedlol.png');"></button>
-    <button id="jumpycube" class="button" style="background-image: url('https://i.ibb.co/k96hBpC/jumpycube.png');"></button>
+    <button id="twosidedcannon" class="button" style="background-image: url('https://vortexfun.github.io/vstatic/Twosidedlol.png');"></button>
+    <button id="jumpycube" class="button" style="background-image: url('https://vortexfun.github.io/vstatic/jumpycube.png');"></button>
+    <button id="parkourcat" class="button" style="background-image: url('https://vortexfun.github.io/vstatic/parkourcat.png');"></button> <!-- Fixed ID -->
   </div>
 
   <script>
@@ -121,6 +105,10 @@
 
     document.getElementById('jumpycube').addEventListener('click', function () {
       openLink("jumpycube");
+    });
+
+    document.getElementById('parkourcat').addEventListener('click', function () { // Fixed ID reference
+      openLink("parkourcat");
     });
   </script>
 
